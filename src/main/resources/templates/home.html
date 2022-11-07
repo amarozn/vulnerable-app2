@@ -1,0 +1,17 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div>
+        Welcome to your homepage, <span th:utext="${session.user.fullName}"></span>!
+        <br />
+        <br />
+        </div><a href="#" th:href="@{/logout}">Log Out</a></div>
+
+
+    </div>
+</body>
+</html>
