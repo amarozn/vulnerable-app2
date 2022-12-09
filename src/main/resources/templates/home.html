@@ -9,7 +9,17 @@
         Welcome to your homepage, <span th:utext="${session.user.fullName}"></span>!
         <br />
         <br />
-        </div><a href="#" th:href="@{/logout}">Log Out</a></div>
+        <br />
+        <a th:href="@{http://localhost:8080/post/1/}">Take a look at your first post</a>
+        <br />
+        <br />
+        <br />
+        <a th:href="@{/posts(postId=1)}">Post a new message</a>
+        <br />
+        <br />
+        <br />
+        <br />
+        </div><a th:href="@{/logout}">Log Out</a></div>
 
 
     </div>
