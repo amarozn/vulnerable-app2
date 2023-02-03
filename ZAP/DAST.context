@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
     <context>
-        <name>vulnapp</name>
+        <name>Vulnerable app</name>
         <desc/>
         <inscope>true</inscope>
-        <incregexes>http:/<YOUR IP ADDRESS>:8080.*</incregexes>
+        <incregexes>http://<YOUR PRIVATE IP ADDRESS>:8080.*</incregexes>
         <tech>
             <include>Db</include>
             <include>Db.CouchDB</include>
@@ -62,9 +62,9 @@
             <loggedin>\Q&lt;a href="/logout"&gt;Log Out&lt;/a&gt;\E</loggedin>
             <loggedout>\Q&lt;div&gt;You are not logged in, please login!&lt;/div&gt;\E</loggedout>
             <form>
-                <loginurl>http://YOUR IP ADDRESS:8080/login</loginurl>
+                <loginurl>http://<YOUR PRIVATE IP ADDRESS>:8080/login</loginurl>
                 <loginbody>email={%username%}&amp;password={%password%}</loginbody>
-                <loginpageurl>http://YOUR IP ADDRESS:8080/login</loginpageurl>
+                <loginpageurl>http://<YOUR PRIVATE IP ADDRESS>:8080/login</loginpageurl>
             </form>
         </authentication>
         <users>

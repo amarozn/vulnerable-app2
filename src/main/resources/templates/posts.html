@@ -9,7 +9,7 @@
 <div>
     <ul>
         <th:block th:each="post : ${posts}">
-            <li th:text="${post}"/>
+            <li th:utext="${post}"/>
         </th:block>
     </ul>
     <form th:action="@{/post}" method="post">
@@ -20,3 +20,6 @@
 </div>
 </body>
 </html>
+
+
+
